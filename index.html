@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vitamin D System – Wissen, wo Sie stehen.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0D1B2A',
+            'navy-light': '#1A2E44',
+            amber: '#E8A020',
+            'amber-light': '#F5C05A',
+            'warm-white': '#FAF7F2',
+            'warm-gray': '#8B8680',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-hero {
+      background: linear-gradient(160deg, #0D1B2A 0%, #1A2E44 60%, #0D1B2A 100%);
+    }
+    .gradient-amber {
+      background: linear-gradient(135deg, #E8A020 0%, #F5C05A 100%);
+    }
+    .line-divider {
+      width: 48px;
+      height: 2px;
+      background: #E8A020;
+    }
+    .card-hover {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.10);
+    }
+  </style>
+</head>
+<body class="font-sans bg-warm-white text-navy antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-sm border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="font-serif text-white text-xl font-semibold tracking-wide">
+        Vitamin D <span class="text-amber">System</span>
+      </div>
+      <a href="#test" class="hidden md:inline-flex items-center gap-2 bg-amber text-navy font-semibold text-sm px-5 py-2.5 rounded-full hover:bg-amber-light transition-colors duration-200">
+        Jetzt Wert messen
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="gradient-hero min-h-screen flex items-center relative overflow-hidden pt-16">
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-[0.04]" style="background: radial-gradient(circle, #E8A020 0%, transparent 70%); transform: translate(30%, -30%);"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full opacity-[0.03]" style="background: radial-gradient(circle, #E8A020 0%, transparent 70%); transform: translate(-40%, 40%);"></div>
+
+    <div class="max-w-6xl mx-auto px-6 py-24 md:py-32 w-full">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 mb-8">
+          <div class="w-1.5 h-1.5 rounded-full bg-amber"></div>
+          <span class="text-amber/80 text-sm font-medium tracking-widest uppercase">Das Vitamin-D-System</span>
+        </div>
+        <h1 class="font-serif text-white text-5xl md:text-7xl font-bold leading-[1.1] mb-8">
+          Wissen,<br />wo Sie stehen.
+        </h1>
+        <p class="text-white/60 text-xl md:text-2xl font-light leading-relaxed mb-12 max-w-xl">
+          Bevor Sie handeln, sollten Sie kennen, was Ihr Körper wirklich braucht. Alles beginnt mit einer Messung.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#test" class="inline-flex items-center justify-center gap-3 bg-amber text-navy font-semibold px-8 py-4 rounded-full text-lg hover:bg-amber-light transition-colors duration-200 group">
+            Meinen Vitamin-D-Wert messen
+            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="#system" class="inline-flex items-center justify-center gap-2 text-white/70 font-medium px-8 py-4 rounded-full border border-white/10 hover:border-white/30 hover:text-white transition-all duration-200">
+            Das System entdecken
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30">
+      <span class="text-xs tracking-widest uppercase">Mehr erfahren</span>
+      <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- Problem: Die Wissenslücke -->
+  <section class="py-24 md:py-32 bg-warm-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="line-divider mb-6"></div>
+          <h2 class="font-serif text-4xl md:text-5xl font-bold leading-tight mb-6">
+            Viele Menschen<br />supplementieren.<br />
+            <span class="text-amber">Kaum jemand misst.</span>
+          </h2>
+          <p class="text-warm-gray text-lg leading-relaxed mb-8">
+            Vitamin D gehört zu den bekanntesten Nährstoffen überhaupt. Gleichzeitig wird es häufig eingenommen, ohne den eigenen Ausgangswert zu kennen.
+          </p>
+          <p class="text-navy text-lg leading-relaxed font-medium">
+            Das größte Problem ist nicht zwangsläufig ein Mangel. Das größte Problem ist fehlende Gewissheit.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white border border-gray-100 card-hover">
+            <div class="w-8 h-8 rounded-full border-2 border-amber/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div class="w-2 h-2 rounded-full bg-amber/40"></div>
+            </div>
+            <div>
+              <p class="font-semibold text-navy">Ich vermute einen Mangel</p>
+              <p class="text-warm-gray text-sm mt-0.5">aber ich kenne meinen Wert nicht.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white border border-gray-100 card-hover">
+            <div class="w-8 h-8 rounded-full border-2 border-amber/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div class="w-2 h-2 rounded-full bg-amber/40"></div>
+            </div>
+            <div>
+              <p class="font-semibold text-navy">Ich nehme bereits Vitamin D</p>
+              <p class="text-warm-gray text-sm mt-0.5">aber ich weiß nicht, ob es reicht.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white border border-gray-100 card-hover">
+            <div class="w-8 h-8 rounded-full border-2 border-amber/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div class="w-2 h-2 rounded-full bg-amber/40"></div>
+            </div>
+            <div>
+              <p class="font-semibold text-navy">Ich habe davon gehört</p>
+              <p class="text-warm-gray text-sm mt-0.5">aber ich weiß nicht, wo ich stehe.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white border border-gray-100 card-hover">
+            <div class="w-8 h-8 rounded-full border-2 border-amber/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div class="w-2 h-2 rounded-full bg-amber/40"></div>
+            </div>
+            <div>
+              <p class="font-semibold text-navy">Ich supplementiere seit Monaten</p>
+              <p class="text-warm-gray text-sm mt-0.5">aber ich habe nie kontrolliert.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Die Kernbotschaft -->
+  <section class="py-24 bg-navy">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="w-px h-12 bg-amber/30 mx-auto mb-8"></div>
+      <p class="text-white/40 text-sm tracking-widest uppercase mb-6">Die Kernbotschaft</p>
+      <blockquote class="font-serif text-white text-3xl md:text-5xl font-bold leading-tight mb-8">
+        „Bevor Sie handeln, sollten Sie wissen, wo Sie stehen."
+      </blockquote>
+      <p class="text-white/50 text-lg leading-relaxed max-w-2xl mx-auto">
+        Nicht Angst. Nicht Druck. Sondern Orientierung — auf Basis Ihrer tatsächlichen Werte.
+      </p>
+      <div class="w-px h-12 bg-amber/30 mx-auto mt-8"></div>
+    </div>
+  </section>
+
+  <!-- Warum der Test das Fundament ist -->
+  <section id="test" class="py-24 md:py-32 bg-warm-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <div class="line-divider mx-auto mb-6"></div>
+        <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Das Fundament: Die Messung</h2>
+        <p class="text-warm-gray text-xl max-w-2xl mx-auto">Der Home-Test ist kein Zusatzprodukt. Er ist der Beginn von allem.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-16">
+        <!-- Ohne Messung -->
+        <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100">
+          <p class="text-warm-gray text-sm font-medium tracking-wider uppercase mb-6">Ohne Messung</p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-gray-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+              <span class="text-warm-gray">Keine Orientierung über den eigenen Wert</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-gray-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+              <span class="text-warm-gray">Keine Ausgangsbasis für eine Dosierung</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-gray-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+              <span class="text-warm-gray">Keine Kontrolle über den Fortschritt</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-gray-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+              <span class="text-warm-gray">Keine Gewissheit über den Erfolg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mit Messung -->
+        <div class="p-8 rounded-3xl bg-navy text-white relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-48 h-48 rounded-full opacity-[0.06]" style="background: radial-gradient(circle, #E8A020, transparent); transform: translate(30%, -30%);"></div>
+          <p class="text-amber text-sm font-medium tracking-wider uppercase mb-6 relative">Mit Messung</p>
+          <div class="space-y-4 relative">
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-amber flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span class="text-white/80">Klare Ausgangsbasis — Ihr persönlicher Wert</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-amber flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span class="text-white/80">Zielbereich definiert und erreichbar</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-amber flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span class="text-white/80">Dosierung angepasst an Ihren Bedarf</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-amber flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span class="text-white/80">Fortschritt messbar und kontrollierbar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Test -->
+      <div class="text-center">
+        <a href="#" class="inline-flex items-center gap-3 gradient-amber text-navy font-bold px-10 py-5 rounded-full text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg shadow-amber/20">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+          Jetzt Home-Test starten
+        </a>
+        <p class="text-warm-gray text-sm mt-4">Bequem von zu Hause — Ergebnis in wenigen Tagen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Das System -->
+  <section id="system" class="py-24 md:py-32 bg-navy">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <div class="line-divider mx-auto mb-6"></div>
+        <h2 class="font-serif text-white text-4xl md:text-5xl font-bold mb-4">Das System</h2>
+        <p class="text-white/50 text-xl max-w-2xl mx-auto">
+          Wir verkaufen nicht möglichst viele Produkte.<br class="hidden md:block" />
+          Wir denken Vitamin D als System.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        <!-- Hauptkomponente: Vitamin D -->
+        <div class="p-8 rounded-3xl border border-amber/20 bg-amber/5 card-hover relative">
+          <div class="absolute top-4 right-4">
+            <span class="text-amber text-xs font-medium tracking-widest uppercase bg-amber/10 px-3 py-1 rounded-full">Zentrum</span>
+          </div>
+          <div class="w-12 h-12 rounded-2xl gradient-amber flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-white text-2xl font-bold mb-3">Vitamin D₃</h3>
+          <p class="text-white/50 leading-relaxed">Das Herzstück. Nicht isoliert betrachtet — sondern als Teil eines strukturierten Gesamtsystems.</p>
+        </div>
+
+        <!-- Ko-Faktoren Grid -->
+        <div class="md:col-span-2 grid grid-cols-2 gap-6">
+          <div class="p-6 rounded-2xl bg-navy-light border border-white/5 card-hover">
+            <div class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-amber/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <h4 class="text-white font-semibold mb-2">Vitamin K2</h4>
+            <p class="text-white/40 text-sm leading-relaxed">Unterstützt die Kalziumverwertung im Zusammenspiel mit Vitamin D.</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-navy-light border border-white/5 card-hover">
+            <div class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-amber/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h4 class="text-white font-semibold mb-2">Magnesium</h4>
+            <p class="text-white/40 text-sm leading-relaxed">Essenzieller Ko-Faktor für die Aktivierung von Vitamin D im Körper.</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-navy-light border border-white/5 card-hover">
+            <div class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-amber/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+            </div>
+            <h4 class="text-white font-semibold mb-2">Bor</h4>
+            <p class="text-white/40 text-sm leading-relaxed">Unterstützt die Verlängerung der Halbwertszeit von Vitamin D.</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-navy-light border border-white/5 card-hover">
+            <div class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-amber/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            </div>
+            <h4 class="text-white font-semibold mb-2">MCT-Öl</h4>
+            <p class="text-white/40 text-sm leading-relaxed">Verbessert die Aufnahme des fettlöslichen Vitamin D spürbar.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-8 p-6 rounded-2xl border border-white/5 bg-white/[0.02]">
+        <p class="text-white/40 text-sm max-w-xl mx-auto leading-relaxed">
+          Diese Bestandteile sind keine einzelnen Verkaufsprodukte. Sie sind Teil eines strukturierten Gesamtsystems — entwickelt, damit Vitamin D seine volle Wirkung entfalten kann.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transformation -->
+  <section class="py-24 md:py-32 bg-warm-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <div class="line-divider mx-auto mb-6"></div>
+        <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Die Transformation</h2>
+        <p class="text-warm-gray text-xl">Von Vermutung zu Gewissheit.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Vorher -->
+        <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100">
+          <p class="text-warm-gray text-sm font-medium tracking-wider uppercase mb-8">Vorher</p>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-amber/10 flex items-center justify-center flex-shrink-0 text-amber font-bold text-sm">1</div>
+              <div>
+                <p class="font-semibold text-navy">Ich vermute.</p>
+                <p class="text-warm-gray text-sm mt-0.5">Ein Gefühl, keine Gewissheit.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-amber/10 flex items-center justify-center flex-shrink-0 text-amber font-bold text-sm">2</div>
+              <div>
+                <p class="font-semibold text-navy">Ich hoffe.</p>
+                <p class="text-warm-gray text-sm mt-0.5">Kein Plan, nur Hoffnung.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-amber/10 flex items-center justify-center flex-shrink-0 text-amber font-bold text-sm">3</div>
+              <div>
+                <p class="font-semibold text-navy">Ich supplementiere blind.</p>
+                <p class="text-warm-gray text-sm mt-0.5">Ohne Ausgangswert, ohne Ziel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nachher -->
+        <div class="p-8 rounded-3xl bg-navy text-white relative overflow-hidden">
+          <div class="absolute inset-0 opacity-[0.04]" style="background: radial-gradient(circle at 80% 20%, #E8A020, transparent 60%);"></div>
+          <p class="text-amber text-sm font-medium tracking-wider uppercase mb-8 relative">Nachher</p>
+          <div class="space-y-6 relative">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-amber/20 flex items-center justify-center flex-shrink-0 text-amber font-bold text-sm">1</div>
+              <div>
+                <p class="font-semibold text-white">Ich kenne meinen Wert.</p>
+                <p class="text-white/50 text-sm mt-0.5">Gemessen, nicht geschätzt.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-amber/20 flex items-center justify-center flex-shrink-0 text-amber font-bold text-sm">2</div>
+              <div>
+                <p class="font-semibold text-white">Ich kenne meinen Zielbereich.</p>
+                <p class="text-white/50 text-sm mt-0.5">Orientierung statt Hoffnung.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-amber/20 flex items-center justify-center flex-shrink-0 text-amber font-bold text-sm">3</div>
+              <div>
+                <p class="font-semibold text-white">Ich habe einen Plan.</p>
+                <p class="text-white/50 text-sm mt-0.5">Angepasst an meinen Körper.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-amber/20 flex items-center justify-center flex-shrink-0 text-amber font-bold text-sm">4</div>
+              <div>
+                <p class="font-semibold text-white">Ich kontrolliere meinen Fortschritt.</p>
+                <p class="text-white/50 text-sm mt-0.5">Messung nach Messung.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-24 bg-navy relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.06]" style="background: radial-gradient(ellipse at 50% 50%, #E8A020, transparent 60%);"></div>
+    <div class="max-w-3xl mx-auto px-6 text-center relative">
+      <div class="line-divider mx-auto mb-8"></div>
+      <h2 class="font-serif text-white text-4xl md:text-5xl font-bold mb-6">
+        Wo stehen Sie gerade?
+      </h2>
+      <p class="text-white/50 text-xl leading-relaxed mb-12">
+        Finden Sie es heraus — mit dem Home-Test. Bequem, präzise und der erste Schritt zu echtem Wissen über Ihren Körper.
+      </p>
+      <a href="#" class="inline-flex items-center gap-3 gradient-amber text-navy font-bold px-10 py-5 rounded-full text-lg hover:opacity-90 transition-opacity duration-200 shadow-xl shadow-amber/10">
+        Jetzt meinen Vitamin-D-Wert messen
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+      <p class="text-white/30 text-sm mt-6">Kein Mangel-Marketing. Keine Panikmache. Nur Ihr Wert.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy border-t border-white/5 py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="font-serif text-white text-lg font-semibold">
+        Vitamin D <span class="text-amber">System</span>
+      </div>
+      <p class="text-white/30 text-sm text-center">
+        © 2025 Vitamin D System. Alle Rechte vorbehalten.
+      </p>
+      <div class="flex gap-6 text-white/30 text-sm">
+        <a href="#" class="hover:text-white/60 transition-colors">Impressum</a>
+        <a href="#" class="hover:text-white/60 transition-colors">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
